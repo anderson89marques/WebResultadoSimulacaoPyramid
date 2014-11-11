@@ -1,0 +1,56 @@
+body{
+    width: 960px;
+    height: 600px;
+    margin: auto;
+}
+
+body h1{
+    text-align: center;
+    background-color: gray;
+    color: #ffffff;
+}
+
+body h2{
+    text-align: center;
+}
+
+#principal{
+    width: 700px;
+    height: 600px;
+    float: left;
+    background-color: lightblue;
+}
+#menu_lateral{
+    width: 260px;
+    height: 600px;
+    float: right;
+    color: #ffffff;
+    background-color: blue;
+}
+
+#menu_lateral p{
+    text-align: center;
+}
+
+#rodape{
+    clear: both;
+}
+ul li{
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
+
+#listas li:hover{
+    background-color: black;
+}
+
+#bt{
+    width: 50px;
+    height: 30px;
+}
+
+#loading{
+    display: none;
+    margin-top: 150px;
+    margin-left: 300px;
+}

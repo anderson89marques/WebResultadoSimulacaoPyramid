@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="${request.static_url('webresultadossimulacaopyramid:static/simula.css')}" rel="stylesheet">
+    <title>Simulação Discreta</title>
+</head>
+<body id="body">
+    <h1>Simulação Discreta</h1>
+    <div id="principal">
+        <h2>Resultados</h2>
+        <ul id="lista_resultados">
+
+        </ul>
+        <img src="${request.static_url('webresultadossimulacaopyramid:static/imgg.GIF')}" id="loading">
+    </div>
+    <div id="menu_lateral">
+        <p><span>Listas de exercício</span></p>
+        <ul id="listas">
+            <li id="1" >lista 1</li>
+            <li id="2">lista 2</li>
+            <li id="3">lista final</li>
+        </ul>
+    </div>
+    <div id="rodape">
+        <p>Feito por Anderson Marques :D</p>
+    </div>
+    <script type="text/javascript" src="${request.static_url('webresultadossimulacaopyramid:static/jquery.js')}"></script>
+    <script type="text/javascript" src="${request.static_url('webresultadossimulacaopyramid:static/testejquery.js')}"></script>
+</body>
+</html>

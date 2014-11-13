@@ -10,5 +10,5 @@ def main(global_config, **settings):
     #config.add_route('home', '/')
     config.add_route('teste', '/')
     config.add_route('ajaxteste', 'resposta_ajax')
-    config.scan()
+    config.scan(".views")
     return config.make_wsgi_app()

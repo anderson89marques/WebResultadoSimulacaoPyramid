@@ -13,7 +13,7 @@
         <ul id="lista_resultados">
 
         </ul>
-        <img src="${request.static_url('webresultadossimulacaopyramid:static/imgg.GIF')}" id="loading">
+        <img src="${request.static_url('webresultadossimulacaopyramid:static/imagens/imgg.GIF')}" id="loading">
     </div>
     <div id="menu_lateral">
         <p><span>Listas de exercício</span></p>

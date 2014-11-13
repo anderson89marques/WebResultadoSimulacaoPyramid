@@ -35,33 +35,37 @@ from lista2.questao07 import *
 def my_view(request):
     return {'project': 'WebResultadosSimulacaoPyramid'}
 
-@view_config(route_name='teste', renderer='templates/teste.pt')
-def meu_teste(request):
-    return {'nome' : 'Anderson'}
+class SimulacaoViews:
+    def __init__(self,request):
+        self.request = request
+
+    @view_config(route_name='teste', renderer='templates/teste.pt')
+    def meu_teste(self):
+        return {'nome' : 'Anderson'}
 
 
-@view_config(route_name='ajaxteste', renderer='json')
-def resposta_ajax(request):
-    print(request.params['nome'])
+    @view_config(route_name='ajaxteste', renderer='json')
+    def resposta_ajax(self):
+        print(self.request.params['nome'])
 
-    r = gerar_lista(request.params['nome'])
-    return {'lista': r}
+        r = self.gerar_lista(self.request.params['nome'])
+        return {'lista': r}
 
-def gerar_lista(nome_lista):
-    d = {'lista 1': {1:Questao1, 2:Questao2a, 3:Questao2b, 4:Questao3, 5:Questao4Form, 6:Questao4Sim, 7:Questao5,
-         8:Questao6, 9:Questao7, 10:Questao8, 11:Questao9, 12: Questao10},
+    def gerar_lista(self, nome_lista):
+        d = {'lista 1': {1:Questao1, 2:Questao2a, 3:Questao2b, 4:Questao3, 5:Questao4Form, 6:Questao4Sim, 7:Questao5,
+             8:Questao6, 9:Questao7, 10:Questao8, 11:Questao9, 12: Questao10},
 
-         'lista 2' : {1:Questao1a, 2:Questao1aSim, 3:Questao1b, 4:Questao1bSim, 5:Questao02a, 6:Questao02aSim, 7:Questao02b,
-         8:Questao02bSim, 9:Questao03, 10: Questao04a, 11: Questao04aBin, 12: Questao04b, 13: Questao04bBin, 14: Questao05,
-         15: Questao06a, 16: Questao06b, 17: Questao7},
+             'lista 2' : {1:Questao1a, 2:Questao1aSim, 3:Questao1b, 4:Questao1bSim, 5:Questao02a, 6:Questao02aSim, 7:Questao02b,
+             8:Questao02bSim, 9:Questao03, 10: Questao04a, 11: Questao04aBin, 12: Questao04b, 13: Questao04bBin, 14: Questao05,
+             15: Questao06a, 16: Questao06b, 17: Questao7},
 
-         'lista Final' : {1:Questao1a, 2:Questao2a, 3:Questao1, 4:Questao2b, 5:Questao1bSim, 6:Questao4Sim, 7:Questao5,
-         8:Questao6, 9:Questao7}}
+             'lista Final' : {1:Questao1a, 2:Questao2a, 3:Questao1, 4:Questao2b, 5:Questao1bSim, 6:Questao4Sim, 7:Questao5,
+             8:Questao6, 9:Questao7}}
 
-    op = d[nome_lista]
-    r = []
+        op = d[nome_lista]
+        r = []
 
-    for x, y in op.items():
-        q = y()
-        r.append(q.getquestao())
-    return r
+        for x, y in op.items():
+            q = y()
+            r.append(q.getquestao())
+        return r

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="${request.static_url('webresultadossimulacaopyramid:static/mapa.css')}" rel="stylesheet">
+    <title>Simulação Discreta</title>
+</head>
+<body id="body">
+    <h1>Trabalho Gerência de Redes</h1>
+
+    <div id="mapa"></div>
+    <button id="botao">Traçar rota</button>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="${request.static_url('webresultadossimulacaopyramid:static/jquery.js')}"></script>
+    <script type="text/javascript" src="${request.static_url('webresultadossimulacaopyramid:static/gmaps.js')}"></script>
+    <script type="text/javascript" src="${request.static_url('webresultadossimulacaopyramid:static/mapa.js')}"></script>
+</body>

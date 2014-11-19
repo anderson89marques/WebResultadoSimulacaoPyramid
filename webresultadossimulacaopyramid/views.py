@@ -41,11 +41,15 @@ class SimulacaoViews:
 
     @view_config(route_name='home', renderer='templates/home.pt')
     def home(self):
-        return {"nome" : 'ok'}
+        return {"nome": 'ok'}
 
-    @view_config(route_name='teste', renderer='templates/teste.pt')
+    @view_config(route_name='maps', renderer='templates/maps.pt')
+    def mapa(self):
+        return {"nome": 'ok'}
+
+    @view_config(route_name='simula', renderer='templates/teste.pt')
     def meu_teste(self):
-        return {'nome' : 'Anderson'}
+        return {'nome': 'Anderson'}
 
 
     @view_config(route_name='ajaxteste', renderer='json')

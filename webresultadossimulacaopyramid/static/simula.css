@@ -1,12 +1,13 @@
 body{
     width: 960px;
-    height: 600px;
+    height: 700px;
     margin: auto;
+    background-color: #d32114;
 }
 
 body h1{
     text-align: center;
-    background-color: gray;
+    background-color: #000000;
     color: #ffffff;
 }
 
@@ -16,24 +17,24 @@ body h2{
 
 #principal{
     width: 700px;
-    height: 600px;
+    height: 570px;
     float: left;
-    background-color: lightblue;
+    background-color: #ffffff;
 }
 #menu_lateral{
     width: 260px;
-    height: 600px;
+    height: 570px;
     float: right;
     color: #ffffff;
-    background-color: blue;
+    background-color: #000000;
 }
 
 #menu_lateral p{
     text-align: center;
 }
 
-#rodape{
-    clear: both;
+hr{
+    width: 958px;
 }
 ul li{
     margin-left: 60px;
@@ -41,7 +42,8 @@ ul li{
 }
 
 #listas li:hover{
-    background-color: black;
+    background-color: #767676;
+    cursor: pointer; /*mãozinha aparece quando o mouse está em cima*/
 }
 
 #bt{
@@ -53,4 +55,15 @@ ul li{
     display: none;
     margin-top: 150px;
     margin-left: 300px;
+}
+
+hr{
+    clear: both;
+}
+
+#rodape{
+    height: 100px;
+    background-color: #000000;
+    clear: both;
+    color: #ffffff;
 }

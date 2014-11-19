@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="${request.static_url('webresultadossimulacaopyramid:static/home.css')}" rel="stylesheet">
+    <title>Simulação Discreta</title>
+</head>
+<body id="body">
+    <h1>Trabalho Gerência de Redes</h1>
+    <div id="introducao">
+        <p><span>Introdução do projeto</span></p>
+    </div>
+    <hr>
+    <div id="dashboard">
+        <div id="dash_central">
+            <ul>
+               <li class="dash">
+                   <h6>Lista Simulação</h6>
+                   <img src="${request.static_url('webresultadossimulacaopyramid:static/imagens/googlemaps.png')}" >
+               </li>
+
+               <li class="dash">
+                   <h6>Exemplo FTPS</h6>
+                   <img src="${request.static_url('webresultadossimulacaopyramid:static/imagens/googlemaps.png')}" >
+               </li>
+
+               <li>
+                   <h6>Google Maps</h6>
+                   <img src="${request.static_url('webresultadossimulacaopyramid:static/imagens/googlemaps.png')}" >
+               </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer">
+        Anderson Marques Morais
+    </div>
+</body>

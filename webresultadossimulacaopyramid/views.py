@@ -39,6 +39,10 @@ class SimulacaoViews:
     def __init__(self,request):
         self.request = request
 
+    @view_config(route_name='home', renderer='templates/home.pt')
+    def home(self):
+        return {"nome" : 'ok'}
+
     @view_config(route_name='teste', renderer='templates/teste.pt')
     def meu_teste(self):
         return {'nome' : 'Anderson'}

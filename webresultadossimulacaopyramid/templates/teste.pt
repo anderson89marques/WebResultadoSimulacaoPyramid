@@ -25,7 +25,7 @@
     </div>
     <hr>
     <div id="rodape">
-        <p>Feito por Anderson Marques :D</p>
+        <p>Copyright &copy;Anderson Marques - 2014</p>
     </div>
     <script type="text/javascript" src="${request.static_url('webresultadossimulacaopyramid:static/jquery.js')}"></script>
     <script type="text/javascript" src="${request.static_url('webresultadossimulacaopyramid:static/testejquery.js')}"></script>

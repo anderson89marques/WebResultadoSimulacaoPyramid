@@ -10,8 +10,12 @@
     <h1>Trabalho Gerência de Redes</h1>
     <div id="introducao">
         <h4><span>Introdução do projeto</span><h4>
-        <p>Essa aplicação realiza três tarefas, que servirão para demonstrar o funcionamento das ferramentas utilizadas
-           na mesma.
+        <p>Essa aplicação realiza três tarefas que servirão para demonstrar o funcionamento das ferramentas utilizadas
+           na contrução da mesma.
+           A primeira tarefa realizada resolve um conjunto de três listas de exercícios de simulação discreta. A segunda é
+           o envio de um arquivo via ftps para o servidor, onde este deve processa-lo e guarda as informações extraídas no banco para
+           posterior consulta. E na terceira é utilizado um mapa onde é possível marcar dois pontos a partir dos quais será
+           gerada uma rotar entre eles.
         </p>
     </div>
 
@@ -37,6 +41,6 @@
     </div>
 
     <div id="footer">
-        Anderson Marques Morais
+       <p>Copyright &copy;Anderson Marques - 2014</p>
     </div>
 </body>
